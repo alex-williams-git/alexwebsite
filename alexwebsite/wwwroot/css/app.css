@@ -14,11 +14,11 @@
 
 /* CSS overridng bootstrap objects */
 
-.navbar{
-    background-color :var(--white);
+.navbar {
+    background-color: var(--white);
     margin-bottom: var(--navSpace);
     height: 90px;
-/*    border: var(--navBorder);*/
+    /*    border: var(--navBorder);*/
 }
 
 .navbar-brand{
@@ -65,7 +65,7 @@ h3{
 }
 
 .alexlogo {
-    width: 100px;
+    width: 90px;
     height: auto;
     margin-right: 10px;
 }
