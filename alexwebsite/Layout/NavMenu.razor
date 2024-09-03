@@ -1,0 +1,64 @@
+﻿<nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+
+        <img src="/Static/Alexlogo.png" class="alexlogo"/>
+
+        <a class="navbar-brand" href="">
+            Alexander Williams Software
+        </a>
+
+        <button class="navbar-toggler @NavButtonCssClass" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" 
+                aria-label="Toggle navigation" 
+                @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse @NavBarCssClass" id="navbarCollapse" @onclick="ToggleNavMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                        Home
+                    </NavLink>
+                </li>
+
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/aboutme">
+                        About Me
+                    </NavLink>
+                </li>
+
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/projects">
+                        Projects
+                    </NavLink>
+                </li>
+
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/aboutme">
+                        Technologies
+                    </NavLink>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavBarCssClass => collapseNavMenu ? null : "show";
+    private string? NavButtonCssClass => collapseNavMenu ? "collapsed" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+

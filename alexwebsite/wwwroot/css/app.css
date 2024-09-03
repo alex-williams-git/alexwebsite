@@ -1,0 +1,79 @@
+:root {
+    --purple: #6f42c1;
+    --lightblue: #a4e8f3;
+    --lighterblue: #F6FEFD;
+    --white: #D0D5D4;
+
+    --navSpace: 1.5rem;
+    --brandFont: "Rubik", sans-serif;
+    --navBorder: 2px solid black;
+
+    --bold: bold;
+    --center: center;
+}
+
+/* CSS overridng bootstrap objects */
+
+.navbar{
+    background-color :var(--white);
+    margin-bottom: var(--navSpace);
+    height: 90px;
+/*    border: var(--navBorder);*/
+}
+
+.navbar-brand{
+    font-family: var(--brandFont);
+    font-weight: var(--bold);
+}
+
+.nav-item{
+    font-family: var(--brandFont);
+}
+
+body{
+    background-color: var(--lighterblue);
+}
+
+h3{
+    font-family: var(--brandFont);
+}
+
+/* CSS related to images and text */
+
+.headshot {
+    width: 250px;
+    height: auto;
+    margin-right: 15px;
+    border: 1px solid black;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.text-side p{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.alexlogo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.resumebutton {
+    padding: 0px 6px;
+    color: white;
+    background-color: #5fb6e1;
+    font-size: 12px;
+    border: 2px solid black;
+}
